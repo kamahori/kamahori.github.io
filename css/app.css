@@ -1,8 +1,7 @@
 #main {
 	font-weight: 250;
-	font-size: 16px;
-	padding-left: 5%;
-	padding-right: 5%;
+	padding-left: 2.5%;
+	padding-right: 2.5%;
 	margin-left: auto;
 	margin-right: auto;
 	line-height: 1.5;
@@ -36,31 +35,49 @@ a {
 
 h2 {
 	font-weight: 600;
-    font-size: 20px;
+    font-size: 1.4rem;
 	color: #4B2D83;
 }
 
 h3 {
 	font-weight: 500;
+	font-size: 1.3rem;
 	color: #4B2D83;
 }
 
+@media only screen and (max-width: 1000px) {
+	#main {
+		/* -webkit-text-size-adjust: 100%; */
+		font-size: 1.5rem;
+	}
+
+	h2 {
+		-webkit-text-size-adjust: 100%;
+		font-size: 2.5rem;
+	}
+
+	h3 {
+		-webkit-text-size-adjust: 100%;
+		font-size: 2.5rem;
+	}
+}
+
 h1, h2, h3, h4, h5 {
-	margin-top: 0.5em;
-	margin-bottom: 0.5em;
+	margin-top: 0.5rem;
+	margin-bottom: 0.5rem;
 }
 
 .cv>li {
-	margin-bottom: 0.5em;
+	margin-bottom: 0.5rem;
 }
 
 p, ul, ol {
-	margin-top: 0.5em;
-	margin-bottom: 0.5em;
+	margin-top: 0.5rem;
+	margin-bottom: 1rem;
 }
 
 ul.cv, ol.cv {
 	list-style-type: decimal;
-	margin-left: 15px;
+	margin-left: 1.5rem;
 	padding-left: 0;
 }
