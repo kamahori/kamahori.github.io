@@ -11,12 +11,19 @@
     <meta http-equiv="Cache-control" content="no-cache">
     <meta http-equiv="Cache" content="no-cache">
     <link rel="stylesheet" type="text/css" href="css/app.css" />
+    <!-- Font Awesome for icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" crossorigin="anonymous" referrerpolicy="no-referrer" />
 </head>
 
 <body>
     <div id="main">
         <div>
-            <h2>Keisuke Kamahori (釜堀 恵輔; he/him)</h2>
+            <div style="display: flex; align-items: center; justify-content: space-between; margin-bottom: 0.5em;">
+                <h2 style="margin: 0;">Keisuke Kamahori (釜堀 恵輔; he/him)</h2>
+                <button id="night-mode-toggle" style="background: none; border: none; font-size: 1.2em; cursor: pointer;" aria-label="Toggle night mode">
+                    <i id="night-mode-icon" class="fa-solid fa-moon" aria-hidden="true"></i>
+                </button>
+            </div>
             <p>
                 <tt>kamahori [at] uw.edu</tt>
             </p>
@@ -110,6 +117,34 @@
             </ul>
         </div>
     </div>
+    <script>
+    // Night mode toggle logic with Font Awesome icons
+    const toggleBtn = document.getElementById('night-mode-toggle');
+    const icon = document.getElementById('night-mode-icon');
+    const body = document.body;
+
+    function setNightMode(on) {
+        if (on) {
+            body.classList.add('night-mode');
+            icon.classList.remove('fa-moon');
+            icon.classList.add('fa-sun');
+        } else {
+            body.classList.remove('night-mode');
+            icon.classList.remove('fa-sun');
+            icon.classList.add('fa-moon');
+        }
+    }
+
+    // Load preference
+    const nightPref = localStorage.getItem('nightMode') === 'true';
+    setNightMode(nightPref);
+
+    toggleBtn.addEventListener('click', () => {
+        const isNight = !body.classList.contains('night-mode');
+        setNightMode(isNight);
+        localStorage.setItem('nightMode', isNight);
+    });
+    </script>
 </body>
 
 </html>
