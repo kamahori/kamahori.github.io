@@ -25,7 +25,7 @@ span.me {
 }
 
 b {
-	font-weight: 500;
+	font-weight: 700;
 }
 
 a {
@@ -52,6 +52,10 @@ h1, h2, h3, h4, h5 {
 
 .cv>li {
 	margin-bottom: 0.5rem;
+}
+
+.topics>li {
+	margin-bottom: 1rem;
 }
 
 p, ul, ol {
