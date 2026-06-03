@@ -112,3 +112,75 @@ body.night-mode #night-mode-toggle .fa-moon {
 #night-mode-toggle .fa-sun {
     color: #bbb;
 }
+
+/* Pill badges for publication links */
+.pub-badge {
+    display: inline-flex;
+    align-items: center;
+    gap: 0.32rem;
+    height: 1.7rem;
+    padding: 0 0.72rem;
+    border-radius: 999px;
+    background: #e9ecfb;
+    color: #4f5bd5;
+    border: 1px solid #d7ddf7;
+    font-size: 0.72rem;
+    font-weight: 700;
+    letter-spacing: 0.04em;
+    text-transform: uppercase;
+    line-height: 1;
+    text-decoration: none;
+    white-space: nowrap;
+    vertical-align: middle;
+    margin-right: 0.3rem;
+    margin-top: 0.25rem;
+    transition: background 0.15s ease, transform 0.15s ease, box-shadow 0.15s ease;
+}
+
+.pub-badge:hover {
+    background: #dde2f9;
+    transform: translateY(-1px);
+    box-shadow: 0 2px 6px rgba(79, 91, 213, 0.2);
+}
+
+.pub-badge i {
+    font-size: 0.95rem;
+}
+
+/* Star icon a touch smaller and aligned */
+.pub-badge .fa-star {
+    font-size: 0.78rem;
+}
+
+/* Vertical divider inside the GitHub badge */
+.pub-badge .badge-divider {
+    width: 1px;
+    height: 0.9rem;
+    background: currentColor;
+    opacity: 0.35;
+    margin: 0 0.05rem;
+}
+
+.pub-badge .stars {
+    text-transform: none;
+    letter-spacing: 0;
+}
+
+/* Hugging Face logo inside a badge */
+.pub-badge .hf-logo {
+    height: 0.95rem;
+    width: auto;
+    display: block;
+}
+
+/* Night mode badges */
+body.night-mode .pub-badge {
+    background: rgba(139, 148, 245, 0.16);
+    color: #aeb6ff;
+    border-color: rgba(139, 148, 245, 0.35);
+}
+
+body.night-mode .pub-badge:hover {
+    background: rgba(139, 148, 245, 0.28);
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.4);
+}
