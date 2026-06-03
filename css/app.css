@@ -24,6 +24,30 @@ span.me {
     text-decoration: underline;
 }
 
+/* Star marking projects led / co-led */
+.lead-star {
+    color: #4B2D83;
+    font-size: 0.7em;
+    vertical-align: super;
+    line-height: 0;
+    margin-left: 0.1em;
+}
+
+.lead-legend {
+    margin-top: 0.4rem;
+    font-size: 0.85rem;
+    opacity: 0.75;
+}
+
+.lead-legend .lead-star {
+    margin-left: 0;
+    margin-right: 0.15em;
+}
+
+body.night-mode .lead-star {
+    color: #b39ddb;
+}
+
 b {
 	font-weight: 700;
 }
