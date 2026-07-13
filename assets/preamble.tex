@@ -1,0 +1,82 @@
+% Preamble and macros for cv.tex
+\usepackage[top=2.0cm, bottom=2.0cm, left=1.4cm, right=1.4cm]{geometry}
+\usepackage{lastpage}
+\usepackage{fancyhdr}
+\pagestyle{fancy}
+\fancyhf{}
+\renewcommand{\headrulewidth}{0pt}
+\fancyfoot[R]{\color{black!60}\thepage/\pageref*{LastPage}}
+\usepackage{tgpagella}
+\usepackage{microtype}
+\usepackage{needspace}
+\usepackage[hidelinks]{hyperref}
+\usepackage{xstring}
+\usepackage[dvipsnames]{xcolor}
+\usepackage{xspace}
+\usepackage{enumitem}
+\usepackage{fontawesome5}
+\usepackage{tasks}
+\settasks{label=\textcolor{BlueViolet}{\large$\circ$}, label-width=1em, item-indent=2.5em, label-offset=0.5em, label-align=right, before-skip=0.5mm, after-skip=0.5mm, after-item-skip=0.5mm}
+\setlist{topsep=0.5mm, partopsep=0pt, parsep=0pt, itemsep=0.5mm}
+\setlist[enumerate]{itemsep=1.5mm, before={\interlinepenalty=10000}}
+\setlist[itemize,1]{label=\textcolor{BlueViolet}{\large$\circ$}}
+\renewcommand{\baselinestretch}{1.2}
+
+% Define new commands
+\newcommand{\cvheading}[1]{
+    \needspace{4\baselineskip}
+    \vspace{3mm}
+    \noindent {\Large \scshape \color{BlueViolet} #1}\vspace{0.8mm}
+    {\color{BlueViolet} \hrule height 0.8pt}
+    \vspace{2.5mm}
+}
+
+\newcommand{\organdloc}[2]{
+    \needspace{4\baselineskip}
+    \noindent
+    {{\bfseries \color{BlueViolet} #1} \hfill #2 }
+    \\ %\vspace{1mm}
+}
+
+\newcommand{\jobanddate}[2]{
+    \noindent
+    {\it #1}
+    \hfill {\it #2}
+}
+
+\newcommand{\highlightme}[1]{
+    \noexpandarg
+    \StrSubstitute[0]{#1}{Keisuke Kamahori}{{\bf \underline{Keisuke Kamahori}}}
+}
+
+\newcommand{\publicationentry}[3]{
+    {\bf \color{BlueViolet} #1} \\
+    \highlightme{#2} \\
+    {\it \xspace #3}
+}
+
+\newcommand{\talktitle}[1]{
+    {\bf #1} \\
+}
+\newcommand{\talkloc}[1]{
+    {\it At #1}
+}
+
+\newcommand{\dateright}[1]{
+    \hfill {\it #1}
+}
+
+% Name and contact header
+\newcommand{\makecvheader}{
+\centerline{{\bf \fontsize{20pt}{20pt}\selectfont Keisuke Kamahori}}
+
+\centerline{\fontsize{11pt}{13pt}\selectfont \color{black!60}
+\faGlobe\ \href{https://kamahori.org}{kamahori.org}
+\quad\raisebox{0.15ex}{\scriptsize\textbullet}\quad
+\faEnvelope[regular]\ \href{mailto:kamahori@cs.washington.edu}{kamahori@cs.washington.edu}
+\quad\raisebox{0.15ex}{\scriptsize\textbullet}\quad
+\faLinkedin\ \href{https://www.linkedin.com/in/kamahori/}{kamahori}
+\quad\raisebox{0.15ex}{\scriptsize\textbullet}\quad
+\faGithub\ \href{https://github.com/kamahori}{kamahori}
+}
+}
