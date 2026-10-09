@@ -32,20 +32,31 @@
 }{
     Keisuke Kamahori*, Shihang Li*, Simon Peter, Baris Kasikci.
 }{
-    Preprint, under submission. (Presented at \href{https://dl4c.github.io/}{DL4C Workshop} @ \href{https://icml.cc/Conferences/2026}{ICML 2026}, July 2026.)
+    Preprint. (Presented at \href{https://dl4c.github.io/}{DL4C Workshop} @ \href{https://icml.cc/Conferences/2026}{ICML 2026}, July 2026.)
 }
 \label{pub:vibeserve}
 
-% M*
+% SpeedrunBench
 \item 
 \publicationentry{
-    \href{https://arxiv.org/abs/2606.12688}{M*: A Modular, Extensible, Serving System for Multimodal Models}.
+    \href{https://arxiv.org/abs/2610.08076}{SpeedrunBench: Challenging LLM Agents with Video Game Speedrunning}.
 }{
-    Atindra Jha*, Naomi Sagan*, Keisuke Kamahori$\dagger$, Irmak Sivgin$\dagger$, Rohan Sanda, Steven Gao, Mark Horowitz, Luke Zettlemoyer, Olivia Hsu, Jure Leskovec, Baris Kasikci, Stephanie Wang.
+    Yoshinari Fujinuma, Keisuke Kamahori, Ryuto Koike, Abdelrahman Madkour, Varun Prashant Gangal, Monty Bichouna, Martyna Markiewicz, Shivani Jain, Duncan Curtis, Rebecca Qian, Anand Kannappan.
 }{
-    Preprint, under submission.
+    Preprint.
 }
-\label{pub:mstar}
+\label{pub:speedrunbench}
+
+% ServingStudio
+\item 
+\publicationentry{
+    \href{https://syfi.cs.washington.edu/blog/2026-09-24-introducing-servingstudio/}{ServingStudio: An Integrated Workbench for Simulating, Analyzing, and Optimizing LLM Serving Systems}.
+}{
+    Kan Zhu, Michael Gu, Sheetal Sriram, Mathew Jacob, Keisuke Kamahori, Vic Li, Yi Pan, Dedong Xie, Stephanie Wang, Arvind Krishnamurthy, Baris Kasikci.
+}{
+    Preprint. (\href{https://syfi.cs.washington.edu/blog/2026-09-24-introducing-servingstudio/}{SyFI Lab Blog}, September 2026.)
+}
+\label{pub:servingstudio}
 
 % Murmur
 \item 
@@ -54,7 +65,7 @@
 }{
     Wei-Tzu Lee, Keisuke Kamahori, Baris Kasikci.
 }{
-    Preprint, under submission. (Presented at \href{https://mlsys.org/Conferences/2026/CallForYPS}{MLSys 2026 YPS}, May 2026.)
+    Preprint. (Presented at \href{https://mlsys.org/Conferences/2026/CallForYPS}{MLSys 2026 YPS}, May 2026.)
 }
 \label{pub:murmur}
 
@@ -65,7 +76,7 @@
 }{
     Keisuke Kamahori, Wei-Tzu Lee, Atindra Jha, Rohan Kadekodi, Stephanie Wang, Arvind Krishnamurthy, Baris Kasikci.
 }{
-    Preprint, under submission. 
+    Preprint. 
 }
 \label{pub:voxserve}
 
@@ -76,18 +87,18 @@
 }{
     Rohan Kadekodi*, Zhan Jin*, Keisuke Kamahori, Yile Gu, Sean Khatiri, Noah H. Bayindirli, Sergey Gorbunov, Baris Kasikci.
 }{
-    Preprint, under submission.
+    Preprint.
 }
 \label{pub:agentflux}
 
-% anonymized preprint
+% Themis
 \item
 \publicationentry{
-    [Title omitted to maintain anonymity] (Topic: profile-guided optimization for CPU prefetchers).
+    \href{https://arxiv.org/abs/2608.00259}{Themis: Software-Defined Hardware Prefetching}.
 }{
-    Keisuke Kamahori et al.
+    Keisuke Kamahori, Neil Adit, Kan Zhu, Yuqi Mai, Victor Lee, Heiner Litz, Chris Kennelly, Snehasish Kumar, Hanna Alam, Milad Hashemi, David Li, Adrian Sampson, Baris Kasikci, Tipp Moseley, Parthasarathy Ranganathan, Akanksha Jain.
 }{
-    Under submission.
+    Preprint.
 }
 \label{pub:prefetcher}
 
@@ -95,6 +106,17 @@
 \needspace{3\baselineskip}\noindent {\large \textbf{Peer-Reviewed Conferences}}
 
 \begin{enumerate}[label={[C\arabic*]}]
+% M*
+\item 
+\publicationentry{
+    \href{https://arxiv.org/abs/2606.12688}{M*: A Modular, Extensible, Serving System for Multimodal Models}.
+}{
+    Atindra Jha*, Naomi Sagan*, Keisuke Kamahori$\dagger$, Irmak Sivgin$\dagger$, Rohan Sanda, Steven Gao, Mark Horowitz, Luke Zettlemoyer, Olivia Hsu, Jure Leskovec, Baris Kasikci, Stephanie Wang.
+}{
+    \href{https://neurips.cc/Conferences/2026}{NeurIPS 2026}, December 2026.
+}
+\label{pub:mstar}
+
 % ConsumerBench
 \item 
 \publicationentry{
@@ -217,7 +239,7 @@
     \item \textbf{Agents and Systems}: Developing an AI agent system for serving system development (VibeServe \ref{pub:vibeserve}); an efficient fine-tuning framework for local AI agents (AgentFlux \ref{pub:agentflux}); part of the \href{https://sds.cs.washington.edu/people/}{Self-Defining Systems} project.
     \item \textbf{Systems for Multimodal Models}: Developing a universal serving system for multimodal models (M* \ref{pub:mstar}); a streaming-centric serving system for speech LLMs (VoxServe \ref{pub:voxserve}); a compression technique for speech models (LiteASR \ref{pub:liteasr}); collaborating with \href{https://ai4deafblind.org/}{AI4DeafBlind} to enable fast ASR inference on low-resource accessibility devices.
     \item \textbf{Local AI}: Led projects on inference acceleration for RAG (TeleRAG \ref{pub:telerag}) and MoE models (Fiddler \ref{pub:fiddler}) under resource constraints; benchmarked on-device inference (ConsumerBench \ref{pub:consumerbench}).
-    \item \textbf{Computer Architecture}: Designed profile-guided optimization techniques for data center CPU prefetchers (under submission \ref{pub:prefetcher}).
+    \item \textbf{Computer Architecture}: Designed software-guided optimization techniques for data center CPU prefetchers (Themis \ref{pub:prefetcher}).
 \end{itemize}
 
 % NVIDIA
@@ -225,7 +247,7 @@
 \jobanddate{Architect Intern}{Jun 2026 -- Sep 2026}
 \begin{itemize}
     \item Supervisor: \href{https://www.linkedin.com/in/joydeep-ray-0563591/}{Joydeep Ray}.
-    \item Working on architectural modeling and simulation for future GPU generations optimized for AI inference.
+    \item Modeled AI inference workloads at the microarchitecture level and analyzed on-chip wiring congestion to quantify performance/design trade-offs for next-generation GPU architectures.
 \end{itemize}
 
 % Kotoba
@@ -336,6 +358,7 @@
 \cvheading{Teaching}
 
 \begin{itemize}
+    \item Guest Lecture, \href{https://abdelfattah-class.github.io/ece6950_adrs/}{ECE 6950 AI Agents for Systems Engineering (Fall 2026)}, Cornell University
     \item TA, \href{https://courses.cs.washington.edu/courses/cse554/26wi/}{CSE 554 Machine Learning Systems (Winter 2026)}
 \end{itemize}
 
@@ -381,6 +404,8 @@
 \cvheading{Services}
 \needspace{3\baselineskip}\noindent Conference Reviewing
 \begin{tasks}(4)
+    \task ICLR (2027)
+    \task AAAI (2027)
     \task NeurIPS (2026)
     \task \href{https://www.caisconf.org/program/2026/committee/}{CAIS (2026)}
     \task \href{https://icml.cc/Conferences/2026/ProgramCommittee}{ICML (2026)}
@@ -389,7 +414,7 @@
 \end{tasks}
 \needspace{3\baselineskip}\noindent Journal Reviewing
 \begin{itemize}
-    \item TMLR (2025 -- Present)
+    \item Transactions on Machine Learning Research (TMLR)
 \end{itemize}
 \needspace{3\baselineskip}\noindent Workshop Reviewing
 \begin{itemize}
@@ -426,5 +451,5 @@
 \end{itemize}
 
 \vspace{3mm}
-\rightline{\color{black!60}\itshape Last update: July 11, 2026}
+\rightline{\color{black!60}\itshape Last update: October 8, 2026}
 \end{document}
